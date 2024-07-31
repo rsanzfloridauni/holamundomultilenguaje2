@@ -20,6 +20,6 @@ class SaludoTest extends TestCase
         $this->assertIsString($resultado['codigo']);
         
         // Verifica que el código no esté vacío
-        $this->assertEmpty($resultado['codigo']);
+        $this->assertNotEmpty($resultado['codigo']);
     }
 }
